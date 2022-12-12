@@ -21,17 +21,25 @@ Movie _$MovieFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Movie {
   String get title => throw _privateConstructorUsedError;
+
   int get year => throw _privateConstructorUsedError;
+
   num get rating => throw _privateConstructorUsedError;
+
   int get runtime => throw _privateConstructorUsedError;
+
   String get summary => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'medium_cover_image')
   String get mediumImage => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'large_cover_image')
   String get largeImage => throw _privateConstructorUsedError;
+
   List<Torrent> get torrents => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $MovieCopyWith<Movie> get copyWith => throw _privateConstructorUsedError;
 }
@@ -39,16 +47,17 @@ mixin _$Movie {
 /// @nodoc
 abstract class $MovieCopyWith<$Res> {
   factory $MovieCopyWith(Movie value, $Res Function(Movie) then) = _$MovieCopyWithImpl<$Res, Movie>;
+
   @useResult
   $Res call(
       {String title,
-        int year,
-        num rating,
-        int runtime,
-        String summary,
-        @JsonKey(name: 'medium_cover_image') String mediumImage,
-        @JsonKey(name: 'large_cover_image') String largeImage,
-        List<Torrent> torrents});
+      int year,
+      num rating,
+      int runtime,
+      String summary,
+      @JsonKey(name: 'medium_cover_image') String mediumImage,
+      @JsonKey(name: 'large_cover_image') String largeImage,
+      List<Torrent> torrents});
 }
 
 /// @nodoc
@@ -57,6 +66,7 @@ class _$MovieCopyWithImpl<$Res, $Val extends Movie> implements $MovieCopyWith<$R
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -76,35 +86,35 @@ class _$MovieCopyWithImpl<$Res, $Val extends Movie> implements $MovieCopyWith<$R
       title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       year: null == year
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
-      as int,
+              as int,
       rating: null == rating
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
-      as num,
+              as num,
       runtime: null == runtime
           ? _value.runtime
           : runtime // ignore: cast_nullable_to_non_nullable
-      as int,
+              as int,
       summary: null == summary
           ? _value.summary
           : summary // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       mediumImage: null == mediumImage
           ? _value.mediumImage
           : mediumImage // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       largeImage: null == largeImage
           ? _value.largeImage
           : largeImage // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       torrents: null == torrents
           ? _value.torrents
           : torrents // ignore: cast_nullable_to_non_nullable
-      as List<Torrent>,
+              as List<Torrent>,
     ) as $Val);
   }
 }
@@ -112,17 +122,18 @@ class _$MovieCopyWithImpl<$Res, $Val extends Movie> implements $MovieCopyWith<$R
 /// @nodoc
 abstract class _$$Movie$CopyWith<$Res> implements $MovieCopyWith<$Res> {
   factory _$$Movie$CopyWith(_$Movie$ value, $Res Function(_$Movie$) then) = __$$Movie$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
       {String title,
-        int year,
-        num rating,
-        int runtime,
-        String summary,
-        @JsonKey(name: 'medium_cover_image') String mediumImage,
-        @JsonKey(name: 'large_cover_image') String largeImage,
-        List<Torrent> torrents});
+      int year,
+      num rating,
+      int runtime,
+      String summary,
+      @JsonKey(name: 'medium_cover_image') String mediumImage,
+      @JsonKey(name: 'large_cover_image') String largeImage,
+      List<Torrent> torrents});
 }
 
 /// @nodoc
@@ -145,35 +156,35 @@ class __$$Movie$CopyWithImpl<$Res> extends _$MovieCopyWithImpl<$Res, _$Movie$> i
       title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       year: null == year
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
-      as int,
+              as int,
       rating: null == rating
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
-      as num,
+              as num,
       runtime: null == runtime
           ? _value.runtime
           : runtime // ignore: cast_nullable_to_non_nullable
-      as int,
+              as int,
       summary: null == summary
           ? _value.summary
           : summary // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       mediumImage: null == mediumImage
           ? _value.mediumImage
           : mediumImage // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       largeImage: null == largeImage
           ? _value.largeImage
           : largeImage // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       torrents: null == torrents
           ? _value._torrents
           : torrents // ignore: cast_nullable_to_non_nullable
-      as List<Torrent>,
+              as List<Torrent>,
     ));
   }
 }
@@ -183,13 +194,13 @@ class __$$Movie$CopyWithImpl<$Res> extends _$MovieCopyWithImpl<$Res, _$Movie$> i
 class _$Movie$ implements Movie$ {
   const _$Movie$(
       {required this.title,
-        required this.year,
-        required this.rating,
-        required this.runtime,
-        required this.summary,
-        @JsonKey(name: 'medium_cover_image') required this.mediumImage,
-        @JsonKey(name: 'large_cover_image') required this.largeImage,
-        required final List<Torrent> torrents})
+      required this.year,
+      required this.rating,
+      required this.runtime,
+      required this.summary,
+      @JsonKey(name: 'medium_cover_image') required this.mediumImage,
+      @JsonKey(name: 'large_cover_image') required this.largeImage,
+      required final List<Torrent> torrents})
       : _torrents = torrents;
 
   factory _$Movie$.fromJson(Map<String, dynamic> json) => _$$Movie$FromJson(json);
@@ -211,6 +222,7 @@ class _$Movie$ implements Movie$ {
   @JsonKey(name: 'large_cover_image')
   final String largeImage;
   final List<Torrent> _torrents;
+
   @override
   List<Torrent> get torrents {
     if (_torrents is EqualUnmodifiableListView) return _torrents;
@@ -259,34 +271,42 @@ class _$Movie$ implements Movie$ {
 abstract class Movie$ implements Movie {
   const factory Movie$(
       {required final String title,
-        required final int year,
-        required final num rating,
-        required final int runtime,
-        required final String summary,
-        @JsonKey(name: 'medium_cover_image') required final String mediumImage,
-        @JsonKey(name: 'large_cover_image') required final String largeImage,
-        required final List<Torrent> torrents}) = _$Movie$;
+      required final int year,
+      required final num rating,
+      required final int runtime,
+      required final String summary,
+      @JsonKey(name: 'medium_cover_image') required final String mediumImage,
+      @JsonKey(name: 'large_cover_image') required final String largeImage,
+      required final List<Torrent> torrents}) = _$Movie$;
 
   factory Movie$.fromJson(Map<String, dynamic> json) = _$Movie$.fromJson;
 
   @override
   String get title;
+
   @override
   int get year;
+
   @override
   num get rating;
+
   @override
   int get runtime;
+
   @override
   String get summary;
+
   @override
   @JsonKey(name: 'medium_cover_image')
   String get mediumImage;
+
   @override
   @JsonKey(name: 'large_cover_image')
   String get largeImage;
+
   @override
   List<Torrent> get torrents;
+
   @override
   @JsonKey(ignore: true)
   _$$Movie$CopyWith<_$Movie$> get copyWith => throw _privateConstructorUsedError;

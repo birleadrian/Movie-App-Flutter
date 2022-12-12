@@ -21,12 +21,17 @@ Torrent _$TorrentFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Torrent {
   String get url => throw _privateConstructorUsedError;
+
   String get hash => throw _privateConstructorUsedError;
+
   String get quality => throw _privateConstructorUsedError;
+
   String get type => throw _privateConstructorUsedError;
+
   String get size => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $TorrentCopyWith<Torrent> get copyWith => throw _privateConstructorUsedError;
 }
@@ -34,6 +39,7 @@ mixin _$Torrent {
 /// @nodoc
 abstract class $TorrentCopyWith<$Res> {
   factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) = _$TorrentCopyWithImpl<$Res, Torrent>;
+
   @useResult
   $Res call({String url, String hash, String quality, String type, String size});
 }
@@ -44,6 +50,7 @@ class _$TorrentCopyWithImpl<$Res, $Val extends Torrent> implements $TorrentCopyW
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -60,23 +67,23 @@ class _$TorrentCopyWithImpl<$Res, $Val extends Torrent> implements $TorrentCopyW
       url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       hash: null == hash
           ? _value.hash
           : hash // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       quality: null == quality
           ? _value.quality
           : quality // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
     ) as $Val);
   }
 }
@@ -84,6 +91,7 @@ class _$TorrentCopyWithImpl<$Res, $Val extends Torrent> implements $TorrentCopyW
 /// @nodoc
 abstract class _$$Torrent$CopyWith<$Res> implements $TorrentCopyWith<$Res> {
   factory _$$Torrent$CopyWith(_$Torrent$ value, $Res Function(_$Torrent$) then) = __$$Torrent$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call({String url, String hash, String quality, String type, String size});
@@ -107,23 +115,23 @@ class __$$Torrent$CopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res, _$Torre
       url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       hash: null == hash
           ? _value.hash
           : hash // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       quality: null == quality
           ? _value.quality
           : quality // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
       size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
-      as String,
+              as String,
     ));
   }
 }
@@ -184,23 +192,28 @@ class _$Torrent$ implements Torrent$ {
 abstract class Torrent$ implements Torrent {
   const factory Torrent$(
       {required final String url,
-        required final String hash,
-        required final String quality,
-        required final String type,
-        required final String size}) = _$Torrent$;
+      required final String hash,
+      required final String quality,
+      required final String type,
+      required final String size}) = _$Torrent$;
 
   factory Torrent$.fromJson(Map<String, dynamic> json) = _$Torrent$.fromJson;
 
   @override
   String get url;
+
   @override
   String get hash;
+
   @override
   String get quality;
+
   @override
   String get type;
+
   @override
   String get size;
+
   @override
   @JsonKey(ignore: true)
   _$$Torrent$CopyWith<_$Torrent$> get copyWith => throw _privateConstructorUsedError;
