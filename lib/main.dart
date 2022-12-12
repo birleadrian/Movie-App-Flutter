@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Movie App',
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
-        scaffoldBackgroundColor: Colors.blue, //<-- SEE HERE
+        scaffoldBackgroundColor: Colors.deepPurpleAccent,
       ),
       home: const MoviePage(title: 'Movies'),
       routes: <String, WidgetBuilder>{
@@ -100,9 +100,9 @@ class _MoviePageState extends State<MoviePage> {
               );
             },
             child: Container(
-              margin: const EdgeInsets.all(10),
-              width: MediaQuery.of(context).size.width * 0.5,
-              height: MediaQuery.of(context).size.height * 0.5,
+              margin: const EdgeInsets.all(6),
+              width: MediaQuery.of(context).size.width * 0.3,
+              height: MediaQuery.of(context).size.height * 0.3,
               child: Image.network(
                 movie.mediumImage,
               ),
@@ -136,28 +136,21 @@ class _DetailsPageState extends State<DetailsPage> {
       backgroundColor: Colors.amberAccent,
       body: ListView(
         children: <Widget>[
-          Row(
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Image.network(
+              movie.largeImage,
+            ),
+          ),
+          Column(
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10),
-                child: Image.network(
-                  movie.mediumImage,
-                ),
+              Text(
+                ' Rating: ${movie.rating.toString()}',
+                style: const TextStyle(color: Colors.black87),
               ),
-              const SizedBox(
-                width: 10,
-              ),
-              Column(
-                children: <Widget>[
-                  Text(
-                    ' Rating: ${movie.rating.toString()}',
-                    style: const TextStyle(color: Colors.black87),
-                  ),
-                  Text(
-                    ' Runtime: ${movie.runtime.toString()} minutes',
-                    style: const TextStyle(color: Colors.black87),
-                  ),
-                ],
+              Text(
+                ' Runtime: ${movie.runtime.toString()} minutes',
+                style: const TextStyle(color: Colors.black87),
               ),
             ],
           ),
